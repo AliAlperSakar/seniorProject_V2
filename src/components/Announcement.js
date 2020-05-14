@@ -46,7 +46,7 @@ export default class Announcement extends Component {
     render() {
         const status = store.get("status");
         const { announcements } = this.state;
-        const href = "/announcements/";
+        const href = "/announcement/";
         console.log(status);
         if (status == "admin") {
             return (
