@@ -1,2 +1,3 @@
-# seniorProject_V2
-Senior Project Version 2
+# seniorProject
+Sports Center Web Application
+Something new 
