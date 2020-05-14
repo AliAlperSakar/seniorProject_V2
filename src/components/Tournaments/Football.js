@@ -23,6 +23,8 @@ export default class Football extends Component {
     }
 
     render() {
+        console.log(this.state.football);
+        const {football} = this.state
         return (
             <div>
                <MainLayout/>
@@ -34,7 +36,9 @@ export default class Football extends Component {
 
             </div>
             <div className="contentFootball">
-            
+            {this.state.football.map((x)=>
+                <p> {x.id} {x.name} {x.campus} {x.teamquota} </p>
+            )}  
             
             
             </div>

@@ -63,7 +63,7 @@ export default class Announcement extends Component {
                                 <tr> */}
                             {/* <th>Image</th> <th> Content </th> <th > Date </th > </tr > */}
                             {announcements.map((x, index) =>
-                                <div className='specialtr' key={index} onClick={console.log("SADAS")} >
+                                <div className='specialtr' style={{display:"inline-table"}} key={index} onClick={console.log("SADAS")} >
                                     <figure className="figuree"><img src={deneme} /></figure>
                                     <h3><Link to={href + index}>{x.text}</Link></h3>
                                     <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. </p>

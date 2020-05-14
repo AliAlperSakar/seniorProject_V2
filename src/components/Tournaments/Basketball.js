@@ -13,6 +13,7 @@ export default class Basketball extends Component {
             basketball:[]
         }
     }
+
     componentDidMount() {
         axios.get("http://localhost:8081/tournaments/basketball")
             .then(response => this.setState({
@@ -20,7 +21,10 @@ export default class Basketball extends Component {
             }))
 
     }
+
     render() {
+        console.log(this.state.basketball);
+        const {basketball} = this.state
         return (
             <div>
             <MainLayout/>
@@ -32,7 +36,9 @@ export default class Basketball extends Component {
 
          </div>
          <div className="contentBasketball">
-         
+            {this.state.basketball.map((x)=>
+                <p> {x.id} {x.name} {x.campus} {x.teamquota} </p>
+            )}
          
          
          </div>

@@ -19,6 +19,8 @@ export default class RacketSports extends Component {
 
     }
     render() {
+        console.log(this.state.racketsports);
+        const {racketsports} = this.state
         return (
             <div>
             <MainLayout/>
@@ -30,9 +32,9 @@ export default class RacketSports extends Component {
 
          </div>
          <div className="contentRacketSports">
-         
-         
-         
+            {this.state.racketsports.map((x)=>
+                <p> {x.id} {x.name} {x.campus} {x.teamquota} </p>
+            )}
          </div>
 
             </div>
