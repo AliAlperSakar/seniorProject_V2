@@ -6,6 +6,8 @@ import futbol from '../images/sporticons/soccer.png'
 import voleybol from '../images/sporticons/volleyball.png'
 import racket from '../images/sporticons/tennis.png'
 import tournamentmin from '../images/fotos/tournamentmin.jpg'
+import { Link } from "react-router-dom";
+
 import { SocialMediaIconsReact } from 'social-media-icons-react';
 const images = [
     {
@@ -61,8 +63,8 @@ class Tournament extends Component {
                 </div>
 
                 <div className="contenttournament4">
-               <a href="/tournaments/racketsports"> <img className='racket' src={racket} />
-                <br></br>   Racket Sports Tournament</a>
+               <Link to ="/tournaments/racketsports"> <img className='racket' src={racket} />
+                <br></br>   Racket Sports Tournament</Link>
 </div>
                 </div>
                 </div>

@@ -11,7 +11,7 @@
 .fotoBasketball{
    display: flex;
    opacity: 0.8;
-
+   width: 100%;
 }
 .contentBasketball{
     margin-top: 2%;

@@ -11,7 +11,7 @@
 .fotoFootball{
    display: flex;
    opacity: 0.8;
-
+   width: 100%;
 }
 .contentFootball{
     margin-top: 2%;

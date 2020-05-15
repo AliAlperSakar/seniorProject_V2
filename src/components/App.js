@@ -34,7 +34,7 @@ class App extends Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/" exact component={Volleyball}/>
+                        <Route path="/" exact component={Login}/>
                         <Route path="/registered" component={Registered}/>
                         <Route path="/homepage" component={HomePage}/>
                         <Route path="/courses" component={Course}/>

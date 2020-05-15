@@ -11,8 +11,9 @@
 .fotoRacketSports{
    display: flex;
    opacity: 0.8;
-
+   width: 100%;
 }
+
 .contentRacketSports{
     margin-top: 2%;
 }
